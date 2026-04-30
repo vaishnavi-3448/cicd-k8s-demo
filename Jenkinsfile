@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        KUBECONFIG = 'C:\\Users\\user\\.kube\\config'
-    }
+    KUBECONFIG = 'C:\\kube\\config'
+}
 
     stages {
         stage('Check K8s Access') {
