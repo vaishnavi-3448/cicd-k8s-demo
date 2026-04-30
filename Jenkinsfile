@@ -6,6 +6,11 @@ pipeline {
     }
 
     stages {
+        stage('Check K8s Access') {
+    steps {
+        bat 'kubectl get nodes'
+    }
+}
 
         stage('Build Docker Image') {
             steps {
